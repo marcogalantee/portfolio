@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: Roboto;
+    background-color: rgb(244, 240, 240);
+}
+.nav-bar{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.icon{
+    display: flex;
+  align-items: center;     /* Allinea verticalmente */
+  height: 100%;            /* Imposta l'altezza del container */
+  font-size: 40px; /* Regola la dimensione dell'icona */
+
+}
+
+.icon>i{
+    margin-left: 20px;
+}
+.icon>p{
+    font-size: 20px; 
+    margin-left: 40px;
+}
+
+.coll{
+    display: flex;
+  align-items: center;     /* Allinea verticalmente */
+  height: 100%;            /* Imposta l'altezza del container */
+}
+
+.collegamenti{
+margin: 0 auto;    
+
+
+}
+
+.collegamenti>a{
+margin: 10px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+
+padding: 9px;
+border-radius: 5px;
+}
+
+
+.collegamenti>a:hover{
+    background-color: rgb(110, 110, 100);
+    color: white;
+}
+/* CSS PER LE CARTE DI INFORMAZIONE */
+
+.contenitore{
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+.sinsin{
+    position: relative;
+    transform: rotate(-20deg);
+    left: 90px;
+    top:20px;
+}
+.sin{
+    position: relative;
+    transform: rotate(20deg);
+    left: 65px;
+    bottom: 40px;
+    
+}
+.desdes{
+    position: relative;
+    transform: rotate(20deg);
+    right: 90px;
+    top: 20px;
+}
+.des{
+    position: relative;
+    transform: rotate(-20deg);
+    right: 65px;
+    bottom: 40px;
+}
+.cen{
+    z-index: 1000;
+}
+  
+.des,.sin,.cen,.sinsin,.desdes{
+    background-color: rgb(251, 250, 250);
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* X, Y, sfocatura, colore */
+}
+.des>p,.sin>p,.cen>p,.sinsin>p,.desdes>p{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+.des>a,.sin>a,.cen>a,.sinsin>a,.desdes>a{
+    text-decoration: none;
+    color: black;
+    background-color:lightgray;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.des>a:hover,.sin>a:hover,.cen>a:hover{
+    background-color: rgb(110, 110, 100);
+    color: white;
+
+}
+.fin{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.fin>h2{
+    text-align: center;
+}
+.span{
+    font-size: 40px;
+position: relative;;
+top: 20px;
+}
+
+.fin>p{
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* NAV BAR */
+.nav-bar{
+    position: fixed;
+    z-index: 100000;
+    top:0;
+}
+
+    .icon>i{
+        margin-left: 10px;
+        font-size: 40px;
+    }
+    .icon>p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    main{
+        margin-top: 120px;
+    }
+    
+    
+ 
+
+.collegamenti{
+    margin-right: 20px;
+}
+.collegamenti>a{
+margin: 0px;
+font-size: 17px;
+text-decoration: none;
+color: black;
+font-weight: 500;
+padding: 5px;
+border-radius: 5px;
+}
+
+
+
+    
+    /* CONTENITORE CON LE CARD */
+
+    .contenitore{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content:center;
+        align-items: center;
+    }
+    .sin,.sinsin,.des,.desdes{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .card{
+        height: 180px;
+        width: 150px;
+        transform: none;
+       margin: 10px;
+       border-radius: 8px;
+    }
+    .des>p,.sin>p,.cen>p,.sinsin>p,.desdes>p{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    .span{
+        font-size: 30px;
+    position: relative;;
+    top: 20px;
+    }
+    .fin>p{
+        font-size: 19px;
+        position: relative;
+        top: 40px;
+        text-align: center;
+        font-weight: 500;
+        margin: 20px;
+
+    }
+    .fin{
+    width: 100%;
+    
+    background-color: white;
+}
+.des>a,.sin>a,.cen>a,.sinsin>a,.desdes>a{
+    text-decoration: none;
+    color: black;
+    background-color:lightgray;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+    
+  }
